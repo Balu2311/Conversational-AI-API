@@ -3,3 +3,4 @@ python-docx
 flask
 scikit-learn
 Streamlit
+PyPDF2
