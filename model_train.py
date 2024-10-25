@@ -96,7 +96,7 @@ def process_and_save_pdfs(pdf_paths, model_filename='model.pkl'):
 
 # Example usage: Process multiple PDFs and save their embeddings in a file
 pdf_files = [
-    r"E://AA_values//dinesh//files//Air Compact Station Setup.pdf",
-    r"E://AA_values//dinesh//files//Tamp Cylinder Not Lowering.pdf"
+    r"files//Air Compact Station Setup.pdf",
+    r"files//Tamp Cylinder Not Lowering.pdf"
 ]
 process_and_save_pdfs(pdf_files, 'model.pkl')
