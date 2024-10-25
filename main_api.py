@@ -4,7 +4,7 @@ import numpy as np
 import joblib
 from sklearn.metrics.pairwise import cosine_similarity
 import os
-from model_training import process_and_save_pdfs
+#from model_training import process_and_save_pdfs
 import logging
 
 app = Flask(__name__)
