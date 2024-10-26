@@ -97,7 +97,7 @@ if st.button("Submit"):
             suggested_file = None
             referral_link = None
         st.write(f"File: {suggested_file}")
-        st.write(f"Links: {referral_link}")
+        st.write(f"Links: {referral_link[0]}")
         # for suggestion in suggestions:
         #     # st.write(f"File: {suggestion[0]}")
         #     # st.write("Links:")
