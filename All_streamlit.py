@@ -91,9 +91,13 @@ if st.button("Submit"):
         
         st.subheader("Suggested Resources:")
         for suggestion in suggestions:
-            st.write(f"File: {suggestion[0]}")
+            # st.write(f"File: {suggestion[0]}")
+            # st.write("Links:")
+            # for link in suggestion[2]:
+            #     st.write(link)
+            st.write(f"File: {suggestion[0][0]}")
             st.write("Links:")
-            for link in suggestion[2]:
+            for link in suggestion[0][2]:
                 st.write(link)
     else:
         st.warning("Please provide your input.")
