@@ -10,7 +10,8 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Set OpenAI API key
-openai.api_key = os.getenv('OPENAI_API_KEY')
+#openai.api_key = os.getenv('OPENAI_API_KEY')
+openai.api_key = st.secrets["open_ai_key"]
 
 # Function to load resources
 def load_resources():
