@@ -90,14 +90,22 @@ if st.button("Submit"):
         st.write(analysis)
         
         st.subheader("Suggested Resources:")
-        for suggestion in suggestions:
-            # st.write(f"File: {suggestion[0]}")
-            # st.write("Links:")
-            # for link in suggestion[2]:
-            #     st.write(link)
-            st.write(f"File: {suggestion[0][0]}")
-            st.write("Links:")
-            for link in suggestion[0][2]:
-                st.write(link)
+        if suggestions:
+            suggested_file = suggestions[0][0]  # Get the file name of the top suggestion
+            referral_link = suggestions[0][2]    # Get the links of the top suggestion
+        else:
+            suggested_file = None
+            referral_link = None
+        st.write(f"File: {suggested_file}")
+        st.write(f"Links:{referral_link}")
+        # for suggestion in suggestions:
+        #     # st.write(f"File: {suggestion[0]}")
+        #     # st.write("Links:")
+        #     # for link in suggestion[2]:
+        #     #     st.write(link)
+        #     st.write(f"File: {suggestion[0][0]}")
+        #     st.write("Links:")
+        #     for link in suggestion[0][2]:
+        #         st.write(link)
     else:
         st.warning("Please provide your input.")
