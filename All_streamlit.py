@@ -77,8 +77,8 @@ def get_similar_resources(user_input, resource_embeddings, resources):
     return ranked_resources[:5]
 
 # Streamlit UI
-st.title("Document Retrieval System")
-user_input = st.text_input("Enter your query:")
+st.title("Conversational AI Chat-2")
+user_input = st.text_input("Please describe your issue:")
 
 if st.button("Submit"):
     if user_input:
