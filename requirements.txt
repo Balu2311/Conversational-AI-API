@@ -4,3 +4,4 @@ flask
 scikit-learn
 Streamlit
 PyPDF2
+python-dotenv
